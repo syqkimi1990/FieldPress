@@ -5975,7 +5975,7 @@ msgid "You will receive an e-mail confirmation shortly."
 msgstr ""
 
 #: includes/templates/popup-window-success-enrollment.php:19
-msgid "You field will be available at any time in your %s"
+msgid "Your field trip will be available at any time in your %s"
 msgstr ""
 
 #: includes/templates/popup-window-success-enrollment.php:27

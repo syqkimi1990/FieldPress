@@ -16,7 +16,7 @@
 			_e( 'You will receive an e-mail confirmation shortly.', 'cp' );
 			?></p>
 
-		<p><?php echo sprintf( __( 'You field will be available at any time in your %s', 'cp' ), $dashboard_link ); ?></p>
+		<p><?php echo sprintf( __( 'Your field trip will be available at any time in your %s', 'cp' ), $dashboard_link ); ?></p>
 	</div>
 
 	<?php
