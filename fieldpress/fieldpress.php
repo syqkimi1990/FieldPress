@@ -5188,7 +5188,7 @@ if ( ! class_exists( 'FieldPress' ) ) {
 			// Create a dummy editor to by used by the FieldPress JS object
 			remove_all_filters('media_buttons'); // We can't use 3rd parties with dynamic editors
 			add_action('media_buttons','media_buttons');
-			add_action('media_buttons',array( $this, 'add_map'));
+			//add_action('media_buttons',array( $this, 'add_map')); // To do: add map button
 			add_action('wp_enqueue_media',array($this, 'include_map_button_js_file'));
 			wp_enqueue_media();
 
