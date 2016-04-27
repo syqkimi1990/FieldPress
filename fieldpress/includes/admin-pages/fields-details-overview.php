@@ -1161,9 +1161,10 @@ $offer_paid = apply_filters( 'fieldpress_offer_paid_fields', true );
 
 											</div>
 
-											<?php
+										<?php
 											// Check to see if we're offering Paid Field Trips.
-											if ( $offer_paid ) {
+											//***********************// Temporarily disable the function of payment gateway. To-do: need to clean up in the future.
+											if ( ! $offer_paid ) {
 												if ( cp_use_woo() ) {
 													//START WOO
 													?>
