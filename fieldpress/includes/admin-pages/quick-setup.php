@@ -16,10 +16,8 @@
 		?>
 		<br/>
 		<?php
-		printf( __( '%s has also installed - but not activated - MarketPress Lite.', 'cp' ), $this->name );
+		printf( __( '%s has also package the Leaflet Map Marker Plugin as an option to add map to your field trip.', 'cp' ), $this->name );
 		?>
-		<br/>
-		<?php _e( 'For those of you who wish to sell your field trip you will need to activate and set up a payment gateway.  But more on that later.', 'cp' ); ?>
 	</div>
 
 	<h1><?php _e( 'Let’s Get Started', 'cp' ); ?></h1>
@@ -32,7 +30,6 @@
 				<li><?php _e( 'Add field trip title and description', 'cp' ); ?></li>
 				<li><?php _e( 'Assign field trip instructor or leader', 'cp' ); ?></li>
 				<li><?php _e( 'Configure attendance and access settings', 'cp' ); ?></li>
-				<!--<li><?php _e( 'Set up payment gateways for Paid Field Trips', 'cp' ); ?></li>-->
 			</ul>
 
 		</div>
@@ -45,7 +42,7 @@
 
 		<div class="about-text">
 			<?php
-			_e( 'Field Trips are stopd by different Stops (field locations). Stops are made up of elements these can be presented on a single page or over several pages . Elements include', 'cp' );
+			_e( 'Field Trips have different Stops (field locations). Stops are made up of elements these can be presented on a single page or over several pages . Elements include', 'cp' );
 			?>
 			<ul>
 				<li><?php _e( 'Text, Video & Audio', 'cp' ); ?></li>
@@ -68,7 +65,7 @@
 			?>
 			<ul>
 				<li><?php _e( 'Manually add students with or without passcode restriction', 'cp' ); ?></li>
-				<li><?php _e( 'Enroll students  automatically after registration and/or payment', 'cp' ); ?></li>
+				<li><?php _e( 'Enroll students  automatically after registration', 'cp' ); ?></li>
 			</ul>
 
 		</div>
