@@ -1632,7 +1632,7 @@ if ( ! class_exists( 'FieldPress_Shortcodes' ) ) {
 													$title = $stop_post->post_title;
 												}
 												?>
-												<div class="tree-stop-left"><?php echo $title; ?></div>
+												<div class="tree-stop-left"><?php echo $stop_post->post_title; ?></div>
 												<div class="tree-stop-right">
 
 													<?php if ( $field->details->field_stop_time_display == 'on' ) { ?>
