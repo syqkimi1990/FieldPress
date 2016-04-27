@@ -37,7 +37,7 @@ get_header();
 
             $query_args = array(
                 'category' => '',
-                'order' => 'DESC',
+                'order' => 'ASC',
                 'post_type' => 'notifications',
                 'post_mime_type' => '',
                 'post_parent' => '',
