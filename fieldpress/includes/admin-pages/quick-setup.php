@@ -8,96 +8,21 @@
 		?>
 		<br/>
 		<?php
-		_e( 'It’s created a couple of dynamic pages labeled ‘Field Trips’ & ‘Dashboard’ and added them to your navigation.', 'cp' );
+		_e( 'It has created a submenu called 'FieldPress' in your admin navigation. In the submenu you can create new field trips, change the plugin settings, and manage instructors and students. In addition, it has add a new theme called  "FieldPress" to your website. You should activate this theme as it has special features and user interfaces that allow the FieldPress plugin to function on your website.', 'cp' );
 		?>
 		<br/>
 		<?php
-		printf( __( 'If these are not visible on your site and theme, you may need to check your %s.', 'cp' ), '<a href="' . admin_url( 'nav-menus.php' ) . '">' . __( 'Menu Settings', 'cp' ) . '</a>' );
+		printf( __( 'FieldPress has also added two dynamic pages to your frontend website menu - 'Field Trips' and "Dashboard". These allow students and instructors to interact with the field trips you create. If these are not visible on your site and theme, you may need to check your %s.', 'cp' ), '<a href="' . admin_url( 'nav-menus.php' ) . '">' . __( 'Menu Settings', 'cp' ) . '</a>' );
 		?>
 		<br/>
 		<?php
-		printf( __( '%s has also package the Leaflet Map Marker Plugin as an option to add map to your field trip.', 'cp' ), $this->name );
+		printf( __( '%s has also packaged the Leaflet Map Marker Plugin as an option to add maps to your field trip. You can activate this plugin in the FieldPress->Settings.', 'cp' ), $this->name );
 		?>
+	
+		
 	</div>
 
-	<h1><?php _e( 'Let’s Get Started', 'cp' ); ?></h1>
 
-	<div class="changelog">
-		<h3><?php _e( 'Step 1. Create a field trip', 'cp' ); ?></h3>
-
-		<div class="about-text">
-			<ul>
-				<li><?php _e( 'Add field trip title and description', 'cp' ); ?></li>
-				<li><?php _e( 'Assign field trip instructor or leader', 'cp' ); ?></li>
-				<li><?php _e( 'Configure attendance and access settings', 'cp' ); ?></li>
-			</ul>
-
-		</div>
-		<br/>
-		<!--<img alt="" src="<?php echo trailingslashit( $this->plugin_url ) . 'images/quick-setup-step-1.jpg'; ?>" class="image-66">-->
-	</div>
-
-	<div class="changelog">
-		<h3><?php _e( 'Step 2. Add Field Trip Content', 'cp' ); ?></h3>
-
-		<div class="about-text">
-			<?php
-			_e( 'Field Trips have several different Stops (field locations). Stops are made up of elements these can be presented on a single page or over several pages . Elements include', 'cp' );
-			?>
-			<ul>
-				<li><?php _e( 'Text, Video & Audio', 'cp' ); ?></li>
-				<li><?php _e( 'File Upload and Download ', 'cp' ); ?></li>
-				<li><?php _e( 'Multiple and Single Choice Questions', 'cp' ); ?></li>
-				<li><?php _e( 'Test Response fields', 'cp' ); ?></li>
-			</ul>
-
-		</div>
-		<!--<img alt="" src="<?php echo trailingslashit( $this->plugin_url ) . 'images/quick-setup-step-2.jpg'; ?>" class="image-66">-->
-
-	</div>
-
-	<div class="changelog">
-		<h3><?php _e( 'Step 3. Enroll students', 'cp' ); ?></h3>
-
-		<div class="about-text">
-			<?php
-			_e( 'Configure student enrollment, select to either:', 'cp' );
-			?>
-			<ul>
-				<li><?php _e( 'Manually add students with or without passcode restriction', 'cp' ); ?></li>
-				<li><?php _e( 'Enroll students  automatically after registration', 'cp' ); ?></li>
-			</ul>
-
-		</div>
-
-	</div>
-
-	<div class="changelog">
-		<h3><?php _e( 'Step 4. Publish your field trip!', 'cp' ); ?></h3>
-
-		<div class="about-text">
-			<?php
-			_e( 'There are many other features in FieldPress, but those are the basics to get you up and running. Now it’s time to publish the field trip and watch your students learn', 'cp' );
-			?>
-			<br/><br/>
-
-		</div>
-		<!--<img alt="" src="<?php echo trailingslashit( $this->plugin_url ) . 'images/quick-setup-step-3.jpg'; ?>" class="image-66">-->
-
-	</div>
-
-	<div class="changelog">
-		<h3><?php _e( 'Step 5. Field Trip Management', 'cp' ); ?></h3>
-
-		<div class="about-text">
-			<ul>
-				<li><?php _e( 'Administer instructors and students', 'cp' ); ?></li>
-				<li><?php _e( 'Manage Grading of the students submitted work for each stop', 'cp' ); ?></li>
-				<li><?php _e( 'Generate Stop/Field Trip/Site-wide Reporting', 'cp' ); ?></li>
-			</ul>
-
-
-		</div>
 
 		<?php
 		if ( current_user_can( 'manage_options' ) && ! get_option( 'permalink_stop' ) ) {
