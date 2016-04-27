@@ -112,7 +112,7 @@ if ( isset( $_POST['_wpnonce'] ) && current_user_can( 'manage_options' ) ) {
 	}
 
 	if ( current_user_can( 'install_plugins' ) && current_user_can( 'activate_plugins' ) ) {
-		$menus['cp-marketpress'] = __( 'MarketPress', 'cp' );
+//		$menus['cp-marketpress'] = __( 'MarketPress', 'cp' );
 		$menus['cp-leafletmapmaker'] = __( 'LeafletMapMaker', 'cp' );
 	}
 
@@ -180,11 +180,11 @@ if ( isset( $_POST['_wpnonce'] ) && current_user_can( 'manage_options' ) ) {
 				}
 				break;
 
-			case 'cp-marketpress':
-				//if ( current_user_can( 'manage_options' ) ) {
-				$this->show_settings_marketpress();
-				//}
-				break;
+//			case 'cp-marketpress':
+//				//if ( current_user_can( 'manage_options' ) ) {
+//				$this->show_settings_marketpress();
+//				//}
+//				break;
 
 			case 'cp-leafletmapmaker':
 				//if ( current_user_can( 'manage_options' ) ) {

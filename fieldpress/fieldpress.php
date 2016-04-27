@@ -584,7 +584,7 @@ if ( ! class_exists( 'FieldPress' ) ) {
 				/*
 				 * Plugin activation class
 				 */
-				require_once( $this->plugin_dir . 'includes/classes/class.plugin-activation.php' );
+				//require_once( $this->plugin_dir . 'includes/classes/class.plugin-activation.php' );
 
 				/*
 				 * Leaflet map plugin class
