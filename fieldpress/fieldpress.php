@@ -2,9 +2,9 @@
 /*
 Plugin Name: FieldPress
 Plugin URI: http://greenconsensus.com/sandbox/wordpress
-Description: FieldPress turns WordPress into a powerful online Field Trip platform. Set up online fields by creating Field Trip stops with maps, quiz elements, video, audio etc.
+Description: FieldPress turns WordPress into a powerful online field trip platform. Set up online field trip by creating stops with maps, quizzes, video, audio etc...
 Author: UBC Geography Flexible Learning
-Author URI: http://greenconsensus.com/sandbox/wordpress
+Author URI: http://open.geog.ubc.ca
 Developers: UBC Geography Flexible Learning
 Version: 1.0
 TextDomain: fp
