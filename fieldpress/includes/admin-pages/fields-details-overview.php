@@ -379,7 +379,7 @@ $offer_paid = apply_filters( 'fieldpress_offer_paid_fields', true );
 											<div class="narrow">
 												<label>
 													<?php _e( 'Field Trip Category', 'cp' ); ?>
-													<a class="context-link" href="edit-tags.php?taxonomy=field_category&post_type=field"><?php _e( 'Manage Categories', 'cp' ); ?></a>
+													<a class="context-link" href="edit-tags.php?taxonomy=field_category&post_type=field" target="_blank"><?php _e( 'Manage Categories', 'cp' ); ?></a>
 												</label>
 												<?php
 												$x = '';
@@ -529,7 +529,7 @@ $offer_paid = apply_filters( 'fieldpress_offer_paid_fields', true );
 													<?php _e( 'Field Trip Stop', 'cp' ); ?>
 													<?php // CP_Helper_Tooltip::tooltip( __( 'Provide a detailed description of the field trip', 'cp' ) );       ?>
 													<br/>
-													<span><?php _e( 'This gives you the option to show/hide Field Trip Stops (Locations), Estimated Time for each location and Free Preview options on the Field Trip Overview page', 'cp' ); ?></span>
+													<span><?php _e( 'This gives you the option to show/hide Field Trip Stops (Locations), Estimated Time for each location on the Field Trip Overview page', 'cp' ); ?></span>
 												</label>
 
 												<div class="field-stop">
@@ -541,8 +541,7 @@ $offer_paid = apply_filters( 'fieldpress_offer_paid_fields', true );
 														<thead>
 															<tr>
 																<th class="column-field-stop"><?php _e( 'Field Trip Stop', 'cp' ); ?></th>
-																<th class="column-show"><?php _e( 'Show', 'cp' ); ?></th>
-																<th class="column-free-preview"><?php _e( 'Free Preview', 'cp' ); ?></th>
+																<th class="column-show" style = "padding-right: 110px;"><?php _e( 'Show', 'cp' ); ?></th>
 																<th class="column-time"><?php _e( 'Time', 'cp' ); ?></th>
 															</tr>
 															<tr class="break">
@@ -605,11 +604,6 @@ $offer_paid = apply_filters( 'fieldpress_offer_paid_fields', true );
 																									}
 																									?> <?php echo( $stop_post->post_status == 'publish' ? 'enabled' : 'disabled' ); ?> />
 
-																									<input type='checkbox' class="module_preview" id='preview-<?php echo $stop_id; ?>' data-id="<?php echo esc_attr( $stop_id ); ?>" name='meta_preview_stop[<?php echo $stop_id; ?>]' <?php
-																									if ( isset( $preview_stop[ $stop_id ] ) ) {
-																										echo ( $preview_stop[ $stop_id ] == 'on' ) ? 'checked' : '';
-																									}
-																									?> <?php echo( $stop_post->post_status == 'publish' ? 'enabled' : 'disabled' ); ?> />
 
 																									<span><?php echo $stop_class->get_stop_time_estimation( $stop_id ); ?></span>
 																								</div>
@@ -657,11 +651,7 @@ $offer_paid = apply_filters( 'fieldpress_offer_paid_fields', true );
 																														}
 																													}
 																													?>
-																													<input type='checkbox' <?php echo $disabled; ?> class="module_preview" id='preview-<?php echo $stop_id . '_' . $i; ?>' data-id="<?php echo esc_attr( $stop_id . '_' . $i ); ?>" name='meta_preview_page[<?php echo $stop_id . '_' . $i; ?>]' <?php
-																													if ( isset( $preview_page[ $stop_id . '_' . $i ] ) || isset( $preview_stop[ $stop_id ] ) ) {
-																														echo ( $preview_page[ $stop_id . '_' . $i ] == 'on' || $preview_stop[ $stop_id ] == 'on' ) ? 'checked' : '';
-																													}
-																													?> <?php echo( $stop_post->post_status == 'publish' ? 'enabled' : 'disabled' ); ?> />
+
 
 																													<span><?php echo $stop_class->get_stop_page_time_estimation( $stop_id, $i ); ?></span>
 																												</div>
