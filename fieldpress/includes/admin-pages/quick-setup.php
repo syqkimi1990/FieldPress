@@ -42,7 +42,7 @@
 
 		<div class="about-text">
 			<?php
-			_e( 'Field Trips have different Stops (field locations). Stops are made up of elements these can be presented on a single page or over several pages . Elements include', 'cp' );
+			_e( 'Field Trips have several different Stops (field locations). Stops are made up of elements these can be presented on a single page or over several pages . Elements include', 'cp' );
 			?>
 			<ul>
 				<li><?php _e( 'Text, Video & Audio', 'cp' ); ?></li>
