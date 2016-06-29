@@ -5147,17 +5147,11 @@ msgstr ""
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: includes/classes/class.plugin-activation.php:163
-msgid "Install %1$s plugin in order to sell field trips."
-msgstr ""
 
 #: includes/classes/class.plugin-activation.php:165
 msgid "Install %1$s"
 msgstr ""
 
-#: includes/classes/class.plugin-activation.php:166
-msgid "Activate %1$s plugin in order to sell field trips"
-msgstr ""
 
 #: includes/classes/class.plugin-activation.php:167
 msgid "Return to MarketPress Installer"
